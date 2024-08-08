@@ -36,13 +36,13 @@ jobs:
 
     - name: Running UI tests
       if: ${{ github.event.inputs.testSet!='UI'}}
-      run: npx playwright test tests/ui
+      run: npx playwright test tests/ui/
       #env:
       #  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       #  MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
     - name: Running API tests
       if: ${{ github.event.inputs.testSet!='API'}}
-      run: npx playwright test tests/api
+      run: npx playwright test tests/api/
       #env:
       #  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       #  MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
