@@ -5,7 +5,7 @@ on:
     inputs:
       environmentName:
         type: choice
-        description: 'Test set'
+        description: 'Test set(not supported)'
         required: true
         options:
           - Full
