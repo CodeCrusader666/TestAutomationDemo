@@ -1,6 +1,6 @@
 import { type Locator, type Page } from '@playwright/test';
 
-export class RegistrationFormPage {
+export class RegistrationFormPage extends BasePage {
     private readonly page: Page;
     private readonly nameInput: Locator;
     private readonly lastNameInput: Locator;
@@ -18,9 +18,10 @@ export class RegistrationFormPage {
     private readonly stateDropdown: Locator;
     private readonly cityDropdown: Locator;
 
-    private readonly URL: string = 'https://demoqa.com/automation-practice-form';
+    private readonly PAGE_URL: string = 'automation-practice-form';
 
     constructor(page: Page) {
+        super(page, PAGE_URL);
         this.page = page;
         this.nameInput = page.locator('#firstName');
         this.lastNameInput = page.locator('#lastName');
@@ -37,10 +38,6 @@ export class RegistrationFormPage {
         this.currentAddressInput = page.locator('#currentAddress');
         this.stateDropdown = page.locator('#react-select-3-input');
         this.cityDropdown = page.locator('#react-select-4-input');
-    }
-
-    async goto() {
-        await this.page.goto(URL);
     }
 
     async setName(name: string) {
