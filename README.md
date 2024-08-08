@@ -5,6 +5,10 @@ This repository will contain QA Automation demo project.
 ```
 npm ci
 ```
+### Environment variables
+This project requires the following environment variables
+* OPENAI_API_KEY
+* MAILOSAUR_API_KEY
 
 ### Running all tests locally
 ```
@@ -25,6 +29,11 @@ npx playwright test tests/todo-page.spec.ts --headed
 ### Running lint to verify code style
 ```
  npm run lint
+```
+
+### Running prettier to reformat code
+```
+ npm run format
 ```
 
 ### Debugging tests
