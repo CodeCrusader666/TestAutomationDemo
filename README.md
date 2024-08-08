@@ -2,10 +2,13 @@
 This repository will contain QA Automation demo project.
 
 ### Installing dependencies
-* command
+* ToDo
 
-### Running all tests
-* command
+### Running all tests locally
+* ToDo
 
-### Running a single tests
-* command
+### Running a single tests locally
+* ToDo
+
+### Running tests on CI
+ToDo
