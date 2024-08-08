@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import {LoginPage} from '../../page_objects/registration_form_page';
+import { RegistrationFormPage } from '../../page_objects/registration_form_page';
 
 test('Form should display an error if required fields are missing', async ({ page }) => {
   const registrationFormPage = new RegistrationFormPage(page);
