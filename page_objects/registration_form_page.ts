@@ -63,7 +63,7 @@ export class RegistrationFormPage extends BasePage {
   }
 
   async setDateOfBirth(dateOfBirth: string) {
-    console.log(`Setting date of birth: ${email}`)
+    console.log(`Setting date of birth: ${dateOfBirth}`)
   }
 
   async setHobbies(hobbies: string) {
