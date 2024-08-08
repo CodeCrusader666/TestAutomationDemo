@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: 21
+        node-version: 22.6.0
     - name: Cache node modules and playwright
       uses: pat-s/always-upload-cache@v3.0.1
       id: playwright-cache
