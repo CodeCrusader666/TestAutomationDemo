@@ -7,6 +7,7 @@ export class RegistrationFormPage {
     private readonly emailInput: Locator;
     private readonly maleRadioButton: Locator;
     private readonly femaleRadioButton: Locator;
+    private readonly otherRadioButton: Locator;
     private readonly dateOfBirthInput: Locator;
     private readonly subjectsInput: Locator;
     private readonly sportsCheckbox: Locator;
@@ -21,6 +22,21 @@ export class RegistrationFormPage {
 
     constructor(page: Page) {
         this.page = page;
+        this.nameInput = page.locator('ToDo');
+        this.lastNameInput = page.locator('ToDo');
+        this.emailInput = page.locator('ToDo');
+        this.maleRadioButton = page.locator('ToDo');
+        this.femaleRadioButton = page.locator('ToDo');
+        this.otherRadioButton = page.locator('ToDo');
+        this.dateOfBirthInput = page.locator('ToDo');
+        this.subjectsInput = page.locator('ToDo');
+        this.sportsCheckbox = page.locator('ToDo');
+        this.readingCheckbox = page.locator('ToDo');
+        this.musicCheckbox = page.locator('ToDo');
+        this.chooseFileButton = page.locator('ToDo');
+        this.currentAddressInput = page.locator('ToDo');
+        this.stateDropdown = page.locator('ToDo');
+        this.cityDropdown = page.locator('ToDo');
     }
 
     async goto() {
