@@ -54,8 +54,36 @@ export class RegistrationFormPage {
     }
 
     async setEmail(email: string) {
-        console.log(`Setting name: ${email}`);
+        console.log(`Setting email: ${email}`);
         await this.emailInput.fill(email);
+    }
+
+    async setGender(gender: string) {
+        console.log(`Setting gender: ${gender}`);
+    }
+
+    async setDateOfBirth(dateOfBirth: string) {
+        console.log(`Setting date of birth: ${email}`);
+    }
+
+    async setHobbies(hobbies: string) {
+        console.log(`Setting hobbies: ${hobbies}`);
+    }
+
+    async uploadFile(fileName: string) {
+        console.log(`Uploading file: ${fileName}`);
+    }
+
+    async setCurrentAddress(currentAddress: string) {
+        console.log(`Setting current address: ${currentAddress}`);
+    }
+
+    async setState(state: string) {
+        console.log(`Setting state: ${state}`);
+    }
+
+    async setCity(city: string) {
+        console.log(`Setting city: ${city}`);
     }
 
 }
