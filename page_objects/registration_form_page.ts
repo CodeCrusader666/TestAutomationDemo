@@ -17,6 +17,7 @@ export class RegistrationFormPage extends BasePage {
     private readonly currentAddressInput: Locator;
     private readonly stateDropdown: Locator;
     private readonly cityDropdown: Locator;
+    private readonly submitButton: Locator;
 
     private readonly PAGE_URL: string = 'automation-practice-form';
 
@@ -38,6 +39,7 @@ export class RegistrationFormPage extends BasePage {
         this.currentAddressInput = page.locator('#currentAddress');
         this.stateDropdown = page.locator('#react-select-3-input');
         this.cityDropdown = page.locator('#react-select-4-input');
+        this.submitButton = page.locator('#submit');
     }
 
     async setName(name: string) {
@@ -83,4 +85,8 @@ export class RegistrationFormPage extends BasePage {
         console.log(`Setting city: ${city}`);
     }
 
+    async submitForm() {
+        console.log('Submitting registration form');
+        await this.submitButton.click();
+    }
 }
