@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
 
 test('Form should display an error if required fields are missing', async ({ page }) => {
   await registrationFormPage.setName('Ihor');
-  await registrationFormPage.setSecondName('Hoffman');
+  await registrationFormPage.setLastName('Hoffman');
   await registrationFormPage.submitForm();
 });
 
