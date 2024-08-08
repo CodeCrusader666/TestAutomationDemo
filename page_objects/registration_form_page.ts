@@ -1,4 +1,5 @@
 import { type Locator, type Page } from '@playwright/test';
+import {BasePage} from './base_page';
 
 export class RegistrationFormPage extends BasePage {
     private readonly page: Page;
