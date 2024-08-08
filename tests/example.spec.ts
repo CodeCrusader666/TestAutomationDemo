@@ -1,5 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('Template', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test('Form should display an error if required fields are missing', async ({ page }) => {
+});
+
+test('Form should successfully save date if optional fields are missing', async ({ page }) => {
+});
+
+test('Filling all fields', async ({ page }) => {
 });
