@@ -18,7 +18,7 @@ test('GET book by ISBN', async ({ request }) => {
 
 test('GET book using wrong ISBN', async ({ request }) => {
   const WRONG_ISBN = '9781442222222';
-  const bookResponse = await request.get(`${BOOK_ENDPOINT}/${WRONG_ISBN}`);
+  const bookResponse = await request.get(`${BOOK_ENDPOINT}?ISBN=${WRONG_ISBN}`);
   expect(bookResponse.status()).toBe(400);
   // ToDo: verify response
 });
