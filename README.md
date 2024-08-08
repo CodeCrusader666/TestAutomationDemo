@@ -22,6 +22,11 @@ npx playwright test tests/todo-page.spec.ts --headed
  npx playwright test --headed
 ```
 
+### Running lint to verify code style
+```
+ npm run lint
+```
+
 ### Debugging tests
 ```
 npx playwright test --debug
