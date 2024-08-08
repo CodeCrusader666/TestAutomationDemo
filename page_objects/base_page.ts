@@ -1,14 +1,16 @@
 import { Page } from '@playwright/test';
 
 export abstract class BasePage {
-    
+    private static readonly DOMAIN = 'https://demoqa.com/';
+    private readonly PAGE_URL;
+      
     protected constructor(protected readonly page: Page, private readonly pageUrl: string) {
-       // what do we need here?
+       this.PAGE_URL = pageUrl;
     }
 
     async open() {
-      // ToDo: add some logic which will re-use domain
-        await this.page.goto('ToDo');
+        console.log(`Opening page: ${this.PAGE_URL}`);
+        await this.page.goto(DOMAIN + this.PAGE_URL);
         await this.page.waitForLoadState();
     }
 }
