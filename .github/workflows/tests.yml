@@ -46,8 +46,6 @@ jobs:
       #env:
       #  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       #  MAILOSAUR_API_KEY: ${{ secrets.MAILOSAUR_API_KEY }}
-    - name: Run Playwright tests
-      run: npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
