@@ -22,21 +22,21 @@ export class RegistrationFormPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.nameInput = page.locator('ToDo');
-        this.lastNameInput = page.locator('ToDo');
-        this.emailInput = page.locator('ToDo');
-        this.maleRadioButton = page.locator('ToDo');
-        this.femaleRadioButton = page.locator('ToDo');
-        this.otherRadioButton = page.locator('ToDo');
-        this.dateOfBirthInput = page.locator('ToDo');
-        this.subjectsInput = page.locator('ToDo');
-        this.sportsCheckbox = page.locator('ToDo');
-        this.readingCheckbox = page.locator('ToDo');
-        this.musicCheckbox = page.locator('ToDo');
-        this.chooseFileButton = page.locator('ToDo');
-        this.currentAddressInput = page.locator('ToDo');
-        this.stateDropdown = page.locator('ToDo');
-        this.cityDropdown = page.locator('ToDo');
+        this.nameInput = page.locator('#firstName');
+        this.lastNameInput = page.locator('#lastName');
+        this.emailInput = page.locator('#userEmail');
+        this.maleRadioButton = page.locator('#gender-radio-1');
+        this.femaleRadioButton = page.locator('#gender-radio-2');
+        this.otherRadioButton = page.locator('#gender-radio-3');
+        this.dateOfBirthInput = page.locator('#userNumber');
+        this.subjectsInput = page.locator('#subjectsInput');
+        this.sportsCheckbox = page.locator('#hobbies-checkbox-1');
+        this.readingCheckbox = page.locator('#hobbies-checkbox-2');
+        this.musicCheckbox = page.locator('#hobbies-checkbox-3');
+        this.chooseFileButton = page.locator('#uploadPicture');
+        this.currentAddressInput = page.locator('#currentAddress');
+        this.stateDropdown = page.locator('#react-select-3-input');
+        this.cityDropdown = page.locator('#react-select-4-input');
     }
 
     async goto() {
