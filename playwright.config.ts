@@ -17,6 +17,7 @@ export default defineConfig({
   timeout: 45000,
   use: {
     baseURL: 'https://demoqa.com/',
+    screenshot: 'only-on-failure',
     video: 'on-first-retry',
   },
 
