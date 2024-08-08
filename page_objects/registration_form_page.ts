@@ -20,7 +20,7 @@ export class RegistrationFormPage extends BasePage {
     private readonly cityDropdown: Locator;
     private readonly submitButton: Locator;
 
-    protected static readonly PAGE_URL: string = 'automation-practice-form';
+    static readonly PAGE_URL: string = 'automation-practice-form';
 
     constructor(page: Page) {
         super(page, PAGE_URL);
