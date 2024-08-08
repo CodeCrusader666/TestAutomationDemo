@@ -2,13 +2,18 @@
 This repository will contain QA Automation demo project.
 
 ### Installing dependencies
-* ToDo
+* npm ci
 
 ### Running all tests locally
-* ToDo
+* npx playwright test
 
-### Running a single tests locally
-* ToDo
+### Running a single test file locally
+* npx playwright test tests/todo-page.spec.ts
+
+### Running a single test locally
+* add **.only** after **test** keyword and run
+* npx playwright test
 
 ### Running tests on CI
-ToDo
+* Open https://github.com/CodeCrusader666/TestAutomationDemo/actions/workflows/tests.yaml
+* Click Run 
