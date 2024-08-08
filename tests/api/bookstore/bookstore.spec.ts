@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { request, test, expect } from '@playwright/test';
 
 const BOOKS_ENDPOINT = '/BookStore/v1/Books';
 const BOOK_ENDPOINT = '/BookStore/v1/Book';
