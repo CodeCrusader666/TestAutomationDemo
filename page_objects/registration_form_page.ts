@@ -23,7 +23,7 @@ export class RegistrationFormPage extends BasePage {
     static readonly PAGE_URL: string = 'automation-practice-form';
 
     constructor(page: Page) {
-        super(page, PAGE_URL);
+        super(page, RegistrationFormPage.PAGE_URL);
         this.page = page;
         this.nameInput = page.locator('#firstName');
         this.lastNameInput = page.locator('#lastName');
