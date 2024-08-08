@@ -1,6 +1,17 @@
 name: Playwright Tests
 on:
+  # this dropdown will be supported later
   workflow_dispatch:  
+    inputs:
+      environmentName:
+        type: choice
+        description: 'Test set'
+        required: true
+        options:
+          - Full
+          - UI
+          - API
+  
 jobs:
   test:
     timeout-minutes: 5
