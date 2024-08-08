@@ -1,0 +1,6 @@
+node_modules
+reports/
+.idea
+/playwright-report/
+/playwright/.cache/
+/.local-browsers
