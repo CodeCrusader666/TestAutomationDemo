@@ -1,11 +1,11 @@
-# Test Automation Demo
+### Test Automation Demo
 This repository will contain QA Automation demo project.
 
-# Installing dependencies
+### Installing dependencies
 * command
 
-# Running all tests
+### Running all tests
 * command
 
-# Running a single tests
+### Running a single tests
 * command
