@@ -1,1 +1,2 @@
-export const generateRandomNumber = (): number => Math.floor(Math.random() * 10000);
+export const generateRandomNumber = (): number =>
+  Math.floor(Math.random() * 10000)
