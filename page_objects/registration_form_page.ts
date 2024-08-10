@@ -60,30 +60,54 @@ export class RegistrationFormPage extends BasePage {
 
   async setGender(gender: string) {
     console.log(`Setting gender: ${gender}`)
+    switch (gender) {
+      case 'male':
+        await this.maleRadioButton.click()
+      case 'female':
+        await this.femaleRadioButton.click()
+      case 'other':
+        await this.otherRadioButton.click()
+    }
   }
 
   async setDateOfBirth(dateOfBirth: string) {
     console.log(`Setting date of birth: ${dateOfBirth}`)
   }
 
-  async setHobbies(hobbies: string) {
+  async setHobbies(hobbies: string[]) {
     console.log(`Setting hobbies: ${hobbies}`)
+    if ('Sports' in hobbies) {
+      await this.sportsCheckbox.click()
+    }
+    if ('Reading' in hobbies) {
+      await this.readingCheckbox.click()
+    }
+    if ('Music' in hobbies) {
+      await this.musicCheckbox.click()
+    }
   }
 
   async uploadFile(fileName: string) {
     console.log(`Uploading file: ${fileName}`)
+    const fileChooserPromise = this.page.waitForEvent('filechooser')
+    await this.chooseFileButton.click()
+    const fileChooser = await fileChooserPromise
+    await fileChooser.setFiles(`test-data/${fileName}`)
   }
 
   async setCurrentAddress(currentAddress: string) {
     console.log(`Setting current address: ${currentAddress}`)
+    await this.currentAddressInput.fill(currentAddress)
   }
 
   async setState(state: string) {
     console.log(`Setting state: ${state}`)
+    await this.cityDropdown.selectOption(state)
   }
 
   async setCity(city: string) {
     console.log(`Setting city: ${city}`)
+    await this.cityDropdown.selectOption(city)
   }
 
   async submitForm() {

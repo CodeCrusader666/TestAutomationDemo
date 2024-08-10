@@ -13,6 +13,9 @@ test('Form should display an error if required fields are missing', async ({
 }) => {
   await registrationFormPage.setName('Ihor')
   await registrationFormPage.setLastName('Hoffman')
+  await registrationFormPage.uploadFile('ImageForUploading.png')
+  //await registrationFormPage.setState('Haryana')
+  //await registrationFormPage.setCity('Karnal')
   await registrationFormPage.submitForm()
 })
 
